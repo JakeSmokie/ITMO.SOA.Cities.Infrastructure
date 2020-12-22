@@ -1,0 +1,13 @@
+server:
+  ssl:
+    enabled: true
+    key-store: classpath:baeldung.jks
+    key-store-password: changeit
+    key-alias: baeldung
+    keyStoreType: JKS
+
+eureka:
+  instance:
+    nonSecurePortEnabled: false
+    securePortEnabled: true
+    securePort: ${server.port}
